@@ -1,0 +1,73 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: white;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: 250px;
+  height: 450px;
+  border-radius: 10px;
+}
+
+.display-container {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: end;
+}
+.main-display {
+  font-size: 40px;
+  margin-top: 20px;
+  height: 50px;
+  margin-right: 10px;
+}
+.small-display {
+  margin-right: 10px;
+}
+
+.btns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.btns-style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  margin: 3px 3px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.btns-style:hover {
+  filter: brightness(0.95);
+}
+.btns-style:active {
+  transform: scale(0.98);
+}
+
+.operator {
+  background-color: orange;
+}
+.number {
+  background-color: rgb(105, 102, 102);
+}
+.clear,
+.delete,
+.switch {
+  background-color: lightgray;
+  color: black;
+}
+.sum {
+  background-color: orange;
+}
