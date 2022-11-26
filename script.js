@@ -13,7 +13,7 @@ const switchOperator = document.querySelector(".switch");
 const operatorArray = ["/", "x", "-", "+", "%"];
 let storeNumebrs = [];
 // VARIABLES
-let firstNumbers = "";
+let firstNumbers = ""; 
 let chousenOperator;
 let lastNumbers = "";
 
