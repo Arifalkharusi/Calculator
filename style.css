@@ -1,24 +1,28 @@
 * {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  color: white;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: white;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  background-color: black;
-  width: 250px;
-  height: 450px;
-  border-radius: 10px;
+  background: rgb(55, 67, 83);
+  width: 300px;
 }
 
 .display-container {
+  font-family: Orbitron, Arial, Helvetica, sans-serif;
+  background: rgb(80, 92, 104);
+  padding: 10px;
   height: 120px;
   display: flex;
   flex-direction: column;
@@ -26,28 +30,28 @@ body {
   justify-content: end;
 }
 .main-display {
-  font-size: 40px;
+  font-size: 35px;
   margin-top: 20px;
   height: 50px;
   margin-right: 10px;
 }
 .small-display {
   margin-right: 10px;
+  height: 30px;
 }
 
 .btns {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .btns-style {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid rgb(80, 92, 104);
   height: 60px;
-  margin: 3px 3px;
   cursor: pointer;
-  border-radius: 50%;
 }
 .btns-style:hover {
   filter: brightness(0.95);
@@ -56,18 +60,13 @@ body {
   transform: scale(0.98);
 }
 
-.operator {
-  background-color: orange;
-}
-.number {
-  background-color: rgb(105, 102, 102);
-}
+.operator,
+.sum,
 .clear,
 .delete,
 .switch {
-  background-color: lightgray;
-  color: black;
+  background: rgb(55, 67, 83);
 }
-.sum {
-  background-color: orange;
+.number {
+  background: rgb(91, 106, 125);
 }
